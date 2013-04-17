@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iconView_L"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/academic"
+            android:src="@drawable/ic_lecturer_52" />
+
+        <TextView
+            android:id="@+id/lblLecturer_L"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/lecturer"
+            android:textColor="@drawable/white"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblSubjects_L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:text="@string/subjects"
+                android:textColor="@drawable/white" />
+
+            <Spinner
+                android:id="@+id/spinSubjects_L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnAdd_L"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_background"
+                android:contentDescription="@string/add"
+                android:src="@drawable/ic_add_22" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblSubjects2_L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="@string/subjects"
+                android:textColor="@drawable/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblName_L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="28dp"
+                android:text="@string/name"
+                android:textColor="@drawable/white" />
+
+            <EditText
+                android:id="@+id/txtName_L"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.10"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@drawable/black" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblContactM_L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="23dp"
+                android:text="@string/contactM"
+                android:textColor="@drawable/white" />
+
+            <EditText
+                android:id="@+id/txtContactM_L"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.10"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblContactO_L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="28dp"
+                android:text="@string/contactO"
+                android:textColor="@drawable/white" />
+
+            <EditText
+                android:id="@+id/txtContactO_L"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.10"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblEmail_L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="28dp"
+                android:text="@string/email"
+                android:textColor="@drawable/white" />
+
+            <EditText
+                android:id="@+id/txtEmail_L"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.10"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="50dp" >
+
+            <Button
+                android:id="@+id/btnSubmit_L"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/button_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="@string/submit"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+     android:paddingBottom="30dp" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtSemester_MM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="0dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/txtSem"
+            android:textColor="@drawable/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divider2_white" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="5dp" >
+
+            <ImageButton
+                android:id="@+id/btnAcademic_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_background"
+                android:contentDescription="@string/academic"
+                android:padding="5dp"
+                android:src="@drawable/ic_academic_48" />
+
+            <TextView
+                android:id="@+id/txtAcademic_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/btnAcademic_MM"
+                android:layout_below="@id/btnAcademic_MM"
+                android:text="@string/academic"
+                android:textColor="@drawable/white" />
+
+            <ImageButton
+                android:id="@+id/btnSubjects_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/btnAcademic_MM"
+                android:background="@drawable/button_background"
+                android:contentDescription="@string/revision"
+                android:padding="5dp"
+                android:src="@drawable/ic_subjects_48" />
+
+            <TextView
+                android:id="@+id/txtSubjects_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btnSubjects_MM"
+                android:layout_below="@+id/btnSubjects_MM"
+                android:layout_marginLeft="3dp"
+                android:text="@string/subjects"
+                android:textColor="@drawable/white" />
+
+            <ImageButton
+                android:id="@+id/btnLecturer_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btnSubjects_MM"
+                android:background="@drawable/button_background"
+                android:contentDescription="@string/test"
+                android:padding="5dp"
+                android:src="@drawable/ic_lecturer_48" />
+
+            <TextView
+                android:id="@+id/txtLecturer_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/btnLecturer_MM"
+                android:layout_below="@id/btnSubjects_MM"
+                android:layout_marginLeft="3dp"
+                android:text="@string/lecturer"
+                android:textColor="@drawable/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="5dp" >
+
+            <ImageButton
+                android:id="@+id/btnClass_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_background"
+                android:contentDescription="@string/_class"
+                android:padding="5dp"
+                android:src="@drawable/ic_class_48" />
+
+            <TextView
+                android:id="@+id/txtClass_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/btnClass_MM"
+                android:layout_below="@id/btnClass_MM"
+                android:layout_marginLeft="10dp"
+                android:text="@string/_class"
+                android:textColor="@drawable/white" />
+
+            <ImageButton
+                android:id="@+id/btnAssignment_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/btnClass_MM"
+                android:background="@drawable/button_background"
+                android:contentDescription="@string/assignment"
+                android:padding="5dp"
+                android:src="@drawable/ic_assignment_48" />
+
+            <TextView
+                android:id="@+id/txtAssignment_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/btnAssignment_MM"
+                android:layout_below="@id/btnAssignment_MM"
+                android:layout_marginLeft="-8dp"
+                android:text="@string/assignment"
+                android:textColor="@drawable/white" />
+
+            <ImageButton
+                android:id="@+id/btnTest_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/btnAssignment_MM"
+                android:background="@drawable/button_background"
+                android:contentDescription="@string/test"
+                android:padding="5dp"
+                android:src="@drawable/ic_test_48" />
+
+            <TextView
+                android:id="@+id/txtTest_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/btnTest_MM"
+                android:layout_below="@id/btnTest_MM"
+                android:layout_marginRight="15dp"
+                android:text="@string/test"
+                android:textColor="@drawable/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="5dp" >
+
+            <ImageButton
+                android:id="@+id/btnRevision_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_background"
+                android:contentDescription="@string/revision"
+                android:padding="5dp"
+                android:src="@drawable/ic_revision_48" />
+
+            <TextView
+                android:id="@+id/txtRevision_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btnRevision_MM"
+                android:layout_below="@+id/btnRevision_MM"
+                android:layout_marginLeft="5dp"
+                android:text="@string/revision"
+                android:textColor="@drawable/white" />
+
+            <ImageButton
+                android:id="@+id/btnResults_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnRevision_MM"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/btnRevision_MM"
+                android:background="@drawable/button_background"
+                android:contentDescription="@string/results"
+                android:padding="5dp"
+                android:src="@drawable/ic_results_48" />
+
+            <TextView
+                android:id="@+id/txtResults_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btnResults_MM"
+                android:layout_below="@+id/btnResults_MM"
+                android:layout_marginLeft="5dp"
+                android:text="@string/results"
+                android:textColor="@drawable/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal" >
+
+            <ImageButton
+                android:id="@+id/btnCalendar_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_background"
+                android:contentDescription="@string/calendar"
+                android:padding="5dp"
+                android:src="@drawable/ic_calendar_72" />
+
+            <TextView
+                android:id="@+id/txtCalendar_MM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/btnCalendar_MM"
+                android:layout_below="@id/btnCalendar_MM"
+                android:layout_marginLeft="10dp"
+                android:text="@string/calendar"
+                android:textColor="@drawable/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

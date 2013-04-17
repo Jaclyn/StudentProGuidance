@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iconView_RE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/academic"
+            android:src="@drawable/ic_results_52" />
+
+        <TextView
+            android:id="@+id/lblResults_RE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/results"
+            android:textColor="@drawable/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divider2_white" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/btnOverall_RE"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="@string/overall"
+                android:textColor="@drawable/black" />
+
+            <Button
+                android:id="@+id/btnSetting_RE"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="@string/gsetting"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblSubjects_RE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:text="@string/subjects"
+                android:textColor="@drawable/white" />
+
+            <Spinner
+                android:id="@+id/spinSubjects_RE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblAnalyse_RE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="false"
+                android:text="@string/calculate"
+                android:textColor="@drawable/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblTitle_RE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="@string/title"
+                android:textColor="@drawable/white" />
+
+            <EditText
+                android:id="@+id/txtTitle_RE"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="50dp"
+                android:layout_weight="0.01"
+                android:inputType="text"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblPercentage_RE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="@string/percentage"
+                android:textColor="@drawable/white" />
+
+            <EditText
+                android:id="@+id/txtPercentage_RE"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="80dp"
+                android:layout_weight="0.01"
+                android:inputType="number|numberDecimal"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblMarks_RE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="@string/marks"
+                android:textColor="@drawable/white" />
+
+            <EditText
+                android:id="@+id/txtMarksSmall_RE"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:inputType="number|numberDecimal"
+                android:textColor="@drawable/black" />
+
+            <TextView
+                android:id="@+id/lblOver_RE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="@string/over"
+                android:textColor="@drawable/white" />
+
+            <EditText
+                android:id="@+id/txtMarksBig_RE"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="80dp"
+                android:ems="10"
+                android:inputType="number|numberDecimal"
+                android:textColor="@drawable/black" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnSubmit_RE"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:background="@drawable/button_background"
+                android:text="@string/submit"
+                android:textColor="@drawable/black" />
+
+            <Button
+                android:id="@+id/btnViewMark_RE"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_background"
+                android:text="@string/view"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

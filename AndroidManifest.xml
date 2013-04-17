@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.psm.StudentProGuidance.activities"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:maxSdkVersion="14"
+        android:minSdkVersion="8"
+        android:targetSdkVersion="12" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:icon="@drawable/ic_launcher_48"
+        android:label="@string/app_name" >
+        <service android:name="com.psm.StudentProGuidance.others.AlarmService" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/login" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SkipLoginActivity"
+            android:label="@string/welcome" >
+            <intent-filter>
+                <action android:name="android.intent.action.SKIPLOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserChooseSemActivity"
+            android:label="@string/semProfile" >
+            <intent-filter>
+                <action android:name="android.intent.action.USERSEM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AcademicForAddActivity"
+            android:label="@string/academic" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACADEMICADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="@string/mainmenu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINMENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AcademicForUpdateActivity"
+            android:label="@string/academic" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACADEMICUPDATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HolidayListActivity"
+            android:label="@string/holiday" >
+            <intent-filter>
+                <action android:name="android.intent.action.HOLIDAYLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HolidayActivity"
+            android:label="@string/holiday" >
+            <intent-filter>
+                <action android:name="android.intent.action.HOLIDAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CalendarViewActivity"
+            android:label="@string/calendar" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALENDAR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DayViewActivity"
+            android:label="@string/calendar" >
+            <intent-filter>
+                <action android:name="android.intent.action.DAYVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CalendarGuideActivity"
+            android:label="@string/color" >
+            <intent-filter>
+                <action android:name="android.intent.action.COLOR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SubjectsForAddActivity"
+            android:label="@string/subjects" >
+            <intent-filter>
+                <action android:name="android.intent.action.SUBJECTSADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SubjectsForUpdateActivity"
+            android:label="@string/subjects" >
+            <intent-filter>
+                <action android:name="android.intent.action.SUBJECTSUPDATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SubjectsListActivity"
+            android:label="@string/subjects" >
+            <intent-filter>
+                <action android:name="android.intent.action.SUBJECTSLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LecturerForAddActivity"
+            android:label="@string/lecturer" >
+            <intent-filter>
+                <action android:name="android.intent.action.LECTURERADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LecturerForUpdateActivity"
+            android:label="@string/lecturer" >
+            <intent-filter>
+                <action android:name="android.intent.action.LECTURERUPDATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LecturerListActivity"
+            android:label="@string/lecturer" >
+            <intent-filter>
+                <action android:name="android.intent.action.LECTURERLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ClassForAddActivity"
+            android:label="@string/_class" >
+            <intent-filter>
+                <action android:name="android.intent.action.CLASSADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ClassForUpdateActivity"
+            android:label="@string/_class" >
+            <intent-filter>
+                <action android:name="android.intent.action.CLASSUPDATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ClassListActivity"
+            android:label="@string/_class" >
+            <intent-filter>
+                <action android:name="android.intent.action.CLASSLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TimeTableActivity"
+            android:label="@string/_class" >
+            <intent-filter>
+                <action android:name="android.intent.action.TIMETABLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ClassSettingListActivity"
+            android:label="@string/_class" >
+            <intent-filter>
+                <action android:name="android.intent.action.CLASSSETTING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AssignmentForAddActivity"
+            android:label="@string/assignment" >
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIGNMENTADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AssignmentForUpdateActivity"
+            android:label="@string/assignment" >
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIGNMENTUPDATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AssignmentListActivity"
+            android:label="@string/assignment" >
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIGNMENTLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestListActivity"
+            android:label="@string/test" >
+            <intent-filter>
+                <action android:name="android.intent.action.TESTLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestForAddActivity"
+            android:label="@string/test" >
+            <intent-filter>
+                <action android:name="android.intent.action.TESTADD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestForUpdateActivity"
+            android:label="@string/test" >
+            <intent-filter>
+                <action android:name="android.intent.action.TESTUPDATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RevisionActivity"
+            android:label="@string/revision" >
+            <intent-filter>
+                <action android:name="android.intent.action.REVISION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GradeSettingActivity"
+            android:label="@string/results" >
+            <intent-filter>
+                <action android:name="android.intent.action.GRADESETTING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResultsActivity"
+            android:label="@string/results" >
+            <intent-filter>
+                <action android:name="android.intent.action.RESULTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResultsListActivity"
+            android:label="@string/results" >
+            <intent-filter>
+                <action android:name="android.intent.action.RESULTSLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OverallActivity"
+            android:label="@string/results" >
+            <intent-filter>
+                <action android:name="android.intent.action.OVERALL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

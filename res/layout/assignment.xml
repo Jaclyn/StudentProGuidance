@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iconView_AS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/academic"
+            android:src="@drawable/ic_assignment_52" />
+
+        <TextView
+            android:id="@+id/lblAssignment_AS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/assignment"
+            android:textColor="@drawable/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divider2_white" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp" >
+
+            <TextView
+                android:id="@+id/lblTitle_AS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="@string/title"
+                android:textColor="@drawable/white"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/txtTitle_AS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.10"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp" >
+
+            <TextView
+                android:id="@+id/lblSubjects_AS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="@string/subjects"
+                android:textColor="@drawable/white"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/spinSubjects_AS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnAdd_AS"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_background"
+                android:contentDescription="@string/add"
+                android:src="@drawable/ic_add_22" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp" >
+
+            <TextView
+                android:id="@+id/lblSubjects2_AS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dp"
+                android:text="@string/subjects"
+                android:textColor="@drawable/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="30dp" >
+
+            <TextView
+                android:id="@+id/lblDescription_AS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="20dp"
+                android:text="@string/description"
+                android:textColor="@drawable/white"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/txtDescription_AS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:inputType="text"
+                android:maxLines="5"
+                android:singleLine="false"
+                android:textColor="@drawable/black" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp" >
+
+            <TextView
+                android:id="@+id/lblDueDate_AS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="23dp"
+                android:text="@string/duedate"
+                android:textColor="@drawable/white"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btnDueDate_AS"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:layout_weight="0.10"
+                android:background="@drawable/button_background_long"
+                android:text="@string/pickOneDate"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp" >
+
+            <TextView
+                android:id="@+id/lblDueTime_AS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="@string/duetime"
+                android:textColor="@drawable/white"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btnDueTime_AS"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:layout_weight="0.10"
+                android:background="@drawable/button_background_long"
+                android:text="@string/pickOneTime"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp" >
+
+            <TextView
+                android:id="@+id/lblReminder_AS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="18dp"
+                android:text="@string/reminder"
+                android:textColor="@drawable/white"
+                android:textSize="16dp" />
+
+            <ToggleButton
+                android:id="@+id/btnReminder_AS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dp"
+                android:text="@string/pickOneTime"
+                android:textColor="@drawable/black" />
+
+            <TextView
+                android:id="@+id/lblReminderChoice_AS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@drawable/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="30dp" >
+
+            <Button
+                android:id="@+id/btnSubmit_AS"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/button_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="@string/submit"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:cacheColorHint="@android:color/transparent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="horizontal"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/lblIndex_CSR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:text="@string/index"
+        android:textColor="@drawable/white"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnBegin_CSR"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="@string/begintime" />
+
+    <Button
+        android:id="@+id/btnEnd_CSR"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/endtime" />
+
+</LinearLayout>

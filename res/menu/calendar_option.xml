@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/optionHelp"
+        android:icon="@drawable/ic_help_48"
+        android:title="@string/help"/>
+
+</menu>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/viewSearch_S"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/search"
+            android:src="@drawable/ic_search_32" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtSearch_S"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textAutoComplete" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgSearch_S"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rdTitle_S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/title" />
+
+        <RadioButton
+            android:id="@+id/rdSubjects_S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subjects" />
+
+        <RadioButton
+            android:id="@+id/rdDate_S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date" />
+    </RadioGroup>
+
+</LinearLayout>

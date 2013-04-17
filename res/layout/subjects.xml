@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iconView_S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/academic"
+            android:src="@drawable/ic_subjects_52" />
+
+        <TextView
+            android:id="@+id/lblSubjects_S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/subjects"
+            android:textColor="@drawable/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divider2_white" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblName_S"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="50dp"
+                android:text="@string/name"
+                android:textColor="@drawable/white" />
+
+            <EditText
+                android:id="@+id/txtName_S"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@drawable/black" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblAbbrev_S"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:text="@string/abbrev"
+                android:textColor="@drawable/white" />
+
+            <EditText
+                android:id="@+id/txtAbbrev_S"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@drawable/black" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblCode_S"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="56dp"
+                android:text="@string/code"
+                android:textColor="@drawable/white" />
+
+            <EditText
+                android:id="@+id/txtCode_S"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblCredit_S"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="50dp"
+                android:text="@string/credit"
+                android:textColor="@drawable/white" />
+
+            <EditText
+                android:id="@+id/txtCredit_S"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:id="@+id/lblChapter_S"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="38dp"
+                android:text="@string/chapter"
+                android:textColor="@drawable/white" />
+
+            <EditText
+                android:id="@+id/txtChapter_S"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="50dp" >
+
+            <Button
+                android:id="@+id/btnSubmit_S"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginLeft="65dp"
+                android:background="@drawable/button_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_add_32"
+                android:text="@string/submit"
+                android:textColor="@drawable/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
